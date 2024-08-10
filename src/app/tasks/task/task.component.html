@@ -1,0 +1,18 @@
+<!-- <h1>{{task.taskTitle}}</h1>
+<button>Edit</button>
+<button>Done</button>
+<br />
+<hr /> -->
+<!--
+    Done,
+    Edit
+-->
+<ul class="list-items ">
+  <li>
+    <div>{{task.taskTitle}}</div>
+    <div>
+      <a [routerLink]="['/EditTask', task.id]"><img class="edit todo-controls"    src="assets/edit.jpeg"></a>
+      <a><img class="delete todo-controls"  src="assets/trash.png" (click)="deleteTask(task.id)"></a>
+    </div>
+  </li>
+</ul>

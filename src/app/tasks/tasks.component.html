@@ -1,0 +1,25 @@
+
+<!-- <app-task/> -->
+<!-- <button type="button">Add New Task</button> -->
+<!-- new button
+      to create new task
+-->
+<!--
+
+-->
+<div class="body">
+  <div class="container">
+    <div class="todo-header">
+      <h2>ToDo List</h2>
+      <img src="assets/notebook.jpg" height="50px" />
+    </div>
+    <div class="todo-body">
+      <input type="text" id="todoText" class="todo-input" placeholder="Add your items" readonly/>
+      <a routerLink="/NewTask"><img src="assets/plux.jpeg" alt="+" /></a>
+    </div>
+    <h5 id="Alert"></h5>
+    @for (task of tasks; track task.id) {
+      <app-task  [task]="task"/>
+    }
+  </div>
+</div>

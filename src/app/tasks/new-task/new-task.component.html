@@ -1,0 +1,33 @@
+
+<section class="bg-sky-50 dark:bg-sky-300">
+  <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+      <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+              <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-dark">
+                  Add New Task
+              </h1>
+              <form [formGroup]="form" class="space-y-4 md:space-y-6" (ngSubmit)=" addNewTask()">
+                  <div>
+                      <label for="id" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Id</label>
+                      <input type="text" [formControl]="form.controls.id"  name="id" id="id" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
+                  </div>
+                  <div>
+                      <label for="date"  class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Date</label>
+                      <input type="date" [formControl]="form.controls.date" name="date" id="date" placeholder="2024-08-04" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                  </div>
+                  <div>
+                    <label for="task" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Task</label>
+                    <input type="text" [formControl]="form.controls.task"  name="task" id="task" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="task">
+                  </div>
+                  <div>
+                    <label for="taskTitle" class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Task Title</label>
+                    <input type="text" [formControl]="form.controls.taskTitle"  name="taskTitle" id="taskTitle" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  >
+                  </div>
+                  <button type="submit" class="w-full focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-purple-900">Add</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+
+

@@ -1,0 +1,24 @@
+ul{
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.todo-controls {
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin-right: 5px;
+}
